@@ -20,7 +20,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Deendayal_search')
 API_ID = int(environ.get('API_ID', '27972068'))
 API_HASH = environ.get('API_HASH', '6e7e2f5cdddba536b8e603b3155223c1')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6753180750:AAHQKZbdMVXtrRsAeaGQIQptKfmUoFmF_sE")
+BOT_TOKEN = environ.get('BOT_TOKEN', "7203772931:AAFhRhJjZuY8D2ixneZT-GBkv4XOHBu347w")
 
 # ============================
 # Bot Settings Configuration
@@ -39,17 +39,17 @@ FSUB_PICS = (environ.get('FSUB_PICS', 'https://graph.org/file/7478ff3eac37f4329c
 # Admin, Channels & Users Configuration
 # ============================
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6075512585').split()] # Replace with the actual admin ID(s) to add
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002103062193 -1002056803358 -1002182758472').split()]  # Channel id for auto indexing (make sure bot is admin)
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002146616379'))  # Log channel id (make sure bot is admin)
-BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1002146616379'))  # Bin channel id (make sure bot is admin)
-DEENDAYAL_MOVIE_UPDATE_CHANNEL = int(environ.get('DEENDAYAL_MOVIE_UPDATE_CHANNEL', '-1002089352638'))  # Notification of those who verify will be sent to your channel
-PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002146616379'))  # Premium logs channel id
-auth_channel = environ.get('AUTH_CHANNEL', '-1002089352638')  # Channel/Group ID for force sub (make sure bot is admin)
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002579079180').split()]  # Channel id for auto indexing (make sure bot is admin)
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002579079180'))  # Log channel id (make sure bot is admin)
+BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1002579079180'))  # Bin channel id (make sure bot is admin)
+DEENDAYAL_MOVIE_UPDATE_CHANNEL = int(environ.get('DEENDAYAL_MOVIE_UPDATE_CHANNEL', '-1002579079180'))  # Notification of those who verify will be sent to your channel
+PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002579079180'))  # Premium logs channel id
+auth_channel = environ.get('AUTH_CHANNEL', '-1002579079180')  # Channel/Group ID for force sub (make sure bot is admin)
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1002474691060').split()]
-support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002070999511')  # Support group id (make sure bot is admin)
-reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002070999511')  # Request channel id (make sure bot is admin)
-AUTH_CHANNEL = [int(fch) if id_pattern.search(fch) else fch for fch in environ.get('AUTH_CHANNEL', '-1002089352638').split()]
-MULTI_FSUB = [int(channel_id) for channel_id in environ.get('MULTI_FSUB', '-1002089352638 -1002070999511').split() if re.match(r'^-?\d+$', channel_id)]  # Channel for force sub (make sure bot is admin)
+support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002579079180')  # Support group id (make sure bot is admin)
+reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002579079180')  # Request channel id (make sure bot is admin)
+AUTH_CHANNEL = [int(fch) if id_pattern.search(fch) else fch for fch in environ.get('AUTH_CHANNEL', '-1002579079180').split()]
+MULTI_FSUB = [int(channel_id) for channel_id in environ.get('MULTI_FSUB', '-1002579079180 -1002579079180').split() if re.match(r'^-?\d+$', channel_id)]  # Channel for force sub (make sure bot is admin)
 
 
 # ============================
@@ -150,7 +150,7 @@ SEASONS = ["season 1" , "season 2" , "season 3" , "season 4", "season 5" , "seas
 # ============================
 # Server & Web Configuration
 # ============================
-
+DAILY_LIMIT = 10000
 STREAM_MODE = bool(environ.get('STREAM_MODE', True)) # Set Stream mode True or False
 
 NO_PORT = bool(environ.get('NO_PORT', False))
@@ -222,7 +222,8 @@ commands = [
 • /get_premium - <code>ɢᴇᴛ ɪɴꜰᴏ ᴏꜰ ᴀɴʏ ᴘʀᴇᴍɪᴜᴍ ᴜꜱᴇʀ.</code>
 • /restart - <code>ʀᴇꜱᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ.</code>
 • /sendall_mode - <code> To On/Off Send all button.</code>
-• /watch_online_mode - <code>ᴡᴀᴛᴄʜ ᴍᴏᴅᴇ ᴏɴ/ᴏꜰꜰ.</code>"""
+• /watch_online_mode - <code>ᴡᴀᴛᴄʜ ᴍᴏᴅᴇ ᴏɴ/ᴏꜰꜰ.</code>
+• /del_topsearch - <code>ᴅᴇʟᴇᴛᴇ ᴛʜᴇ ᴀʟʟ ᴛᴏᴘ ꜱᴇᴀʀᴄʜᴇꜱ.</code>"""
 ]
 
 # ============================
